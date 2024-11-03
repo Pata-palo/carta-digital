@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botonera - Restaurante</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Agent+Orange&display=swap');
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('fondo.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+        }
+        .logo {
+            margin-top: 52px; /* Baja la imagen del logo */
+            position: relative;
+        }
+        .logo img {
+            width: 150px; /* Ajusta el tamaño del logo */
+            height: auto;
+        }
+        .language-selection {
+            margin-top: 18px; /* Sube el resto de los elementos */
+        }
+        .language-selection button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: rgba(255, 0, 0, 0.7); /* Fondo rojo con transparencia */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+        .language-selection button:hover {
+            background-color: rgba(255, 0, 0, 0.9); /* Fondo rojo más oscuro al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.jpg" alt="Logo del Restaurante">
+    </div>
+    <div class="language-selection">
+        <h2>Seleccione su idioma</h2>
+        <button onclick="window.location.href='español.htm'">Español</button>
+        <button onclick="window.location.href='carta-en.html'">English</button>
+        <button onclick="window.location.href='carta-fr.html'">Français</button>
+        <button onclick="window.location.href='carta-it.html'">Italiano</button>
+        <button onclick="window.location.href='carta-ru.html'">Русский</button>
+        <button onclick="window.location.href='carta-no.html'">Norsk</button>
+        <button onclick="window.location.href='carta-de.html'">Deutsch</button>
+    </div>
+</body>
+</html>
