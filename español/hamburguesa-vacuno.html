@@ -19,24 +19,22 @@
         }
         .dish {
             display: flex;
+            flex-direction: column;
             align-items: center;
             background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
             padding: 20px;
             border-radius: 10px;
         }
         .dish img {
-            max-width: 25%; /* Ajusta el tamaño de la imagen */
+            max-width: 100%; /* Ajusta el tamaño de la imagen */
             height: auto;
-            margin-right: 20px; /* Espacio entre la imagen y el texto */
+            margin-bottom: 20px; /* Espacio entre la imagen y el texto */
         }
         .dish-details {
-            max-width: 70%;
+            text-align: center;
         }
         .dish-details h1 {
             margin: 20px 0;
-        }
-        .dish-details p {
-            margin: 10px 0;
         }
         .highlight {
             font-weight: bold;
@@ -44,6 +42,7 @@
         }
         .allergen-icons {
             display: flex;
+            justify-content: center;
             align-items: center;
         }
         .allergen-icons img {
@@ -62,7 +61,6 @@
         <img src="../fotos/hamburguesa-vacuno.jpg" alt="Hamburguesa de Vacuno + Patatas">
         <div class="dish-details">
             <h1>Hamburguesa de Vacuno + Patatas</h1>
-            <p><span class="highlight">Descripción:</span> Jugosa hamburguesa de vacuno servida con patatas fritas.</p>
             <p><span class="highlight">Alérgenos:</span></p>
             <div class="allergen-icons">
                 <img src="../fotos/gluten-icono.png" alt="Gluten">
