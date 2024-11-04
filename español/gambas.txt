@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambas al Ajillo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .dish {
+            display: flex;
+            align-items: center;
+        }
+        .dish img {
+            max-width: 25%; /* Ajusta el tamaño de la imagen */
+            height: auto;
+            margin-right: 20px; /* Espacio entre la imagen y el texto */
+        }
+        .dish-details {
+            max-width: 70%;
+        }
+        .dish-details h1 {
+            margin: 20px 0;
+        }
+        .dish-details p {
+            margin: 10px 0;
+        }
+        .allergen-icons img {
+            width: 20px; /* Tamaño de los iconos de alérgenos */
+            height: auto;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dish">
+        <img src="../fotos/gambas.jpg" alt="Gambas al Ajillo">
+        <div class="dish-details">
+            <h1>Gambas al Ajillo</h1>
+            <p>Descripción: Gambas frescas cocinadas en una deliciosa salsa de ajo y aceite de oliva, con un toque de perejil.</p>
+            <p>Alérgenos:</p>
+            <div class="allergen-icons">
+                <img src="../fotos/mariscos-icono.png" alt="Mariscos">
+                <img src="../fotos/ajo-icono.png" alt="Ajo">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

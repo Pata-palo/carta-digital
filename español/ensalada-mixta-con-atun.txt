@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ensalada Mixta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('../fotos/fondo.png'); /* Añade la imagen de fondo en formato PNG */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .dish {
+            display: flex;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .dish img {
+            max-width: 25%; /* Ajusta el tamaño de la imagen */
+            height: auto;
+            margin-right: 20px; /* Espacio entre la imagen y el texto */
+        }
+        .dish-details {
+            max-width: 70%;
+        }
+        .dish-details h1 {
+            margin: 20px 0;
+        }
+        .dish-details p {
+            margin: 10px 0;
+        }
+        .highlight {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .allergen-icons {
+            display: flex;
+            align-items: center;
+        }
+        .allergen-icons img {
+            width: 40px; /* Tamaño de los iconos de alérgenos */
+            height: auto;
+            margin-right: 10px;
+        }
+        .allergen-icons span {
+            font-size: 16px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dish">
+        <img src="../fotos/ensalada-mixta.jpg" alt="Ensalada Mixta">
+        <div class="dish-details">
+            <h1>Ensalada Mixta</h1>
+            <p><span class="highlight">Descripción:</span> Ensalada fresca con lechuga, tomate, cebolla, atún y aceitunas.</p>
+            <p><span class="highlight">Alérgenos:</span></p>
+            <div class="allergen-icons">
+                <img src="../fotos/pescado-icono.png" alt="Pescado">
+                <span>Pescado</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
