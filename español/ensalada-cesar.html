@@ -18,25 +18,33 @@
             justify-content: center;
         }
         .dish {
+            width: 300px; /* Ancho fijo de la tarjeta */
+            height: 500px; /* Alto fijo de la tarjeta */
             display: flex;
+            flex-direction: column;
             align-items: center;
             background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
             padding: 20px;
             border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle un efecto de tarjeta */
         }
         .dish img {
-            max-width: 25%; /* Ajusta el tamaño de la imagen */
+            width: 100%; /* Ancho fijo de la imagen */
             height: auto;
-            margin-right: 20px; /* Espacio entre la imagen y el texto */
+            max-height: 200px; /* Alto máximo de la imagen */
+            margin-bottom: 20px; /* Espacio entre la imagen y el texto */
         }
         .dish-details {
-            max-width: 70%;
+            text-align: justify; /* Alineación justificada */
+            flex-grow: 1; /* Permite que el contenido crezca para llenar el espacio disponible */
         }
         .dish-details h1 {
-            margin: 20px 0;
+            margin: 10px 0;
+            font-size: 18px; /* Tamaño de fuente ajustado */
         }
         .dish-details p {
-            margin: 10px 0;
+            margin: 5px 0;
+            font-size: 14px; /* Tamaño de fuente ajustado */
         }
         .highlight {
             font-weight: bold;
@@ -44,16 +52,18 @@
         }
         .allergen-icons {
             display: flex;
+            justify-content: center;
             align-items: center;
+            flex-wrap: wrap; /* Permite que los iconos se ajusten en varias líneas si es necesario */
         }
         .allergen-icons img {
-            width: 40px; /* Tamaño de los iconos de alérgenos */
+            width: 30px; /* Tamaño de los iconos de alérgenos */
             height: auto;
-            margin-right: 10px;
+            margin: 5px;
         }
         .allergen-icons span {
-            font-size: 16px;
-            margin-right: 20px;
+            font-size: 12px;
+            margin: 5px;
         }
     </style>
 </head>
@@ -62,15 +72,16 @@
         <img src="../fotos/ensalada-cesar.jpg" alt="Ensalada César con Pollo">
         <div class="dish-details">
             <h1>Ensalada César con Pollo</h1>
-            <p><span class="highlight">Descripción:</span> Base de lechuga, con pollo a la plancha, croutones, dados de queso y aderezo César.</p>
+            <p><span class="highlight">Descripción:</span> Ensalada de lechuga romana, pollo a la parrilla, croutones, queso parmesano y aderezo César.</p>
+            <p>&nbsp;</p> <!-- Espacio adicional -->
             <p><span class="highlight">Alérgenos:</span></p>
             <div class="allergen-icons">
+                <img src="../fotos/gluten-icono.png" alt="Gluten">
+                <span>Gluten</span>
                 <img src="../fotos/lacteos-icono.png" alt="Lácteos">
-                <span>Leche</span>
+                <span>Lácteos</span>
                 <img src="../fotos/huevos-icono.png" alt="Huevos">
-                <span>Huevo</span>
-                <img src="../fotos/mostaza-icono.png" alt="Mostaza">
-                <span>Mostaza</span>
+                <span>Huevos</span>
                 <img src="../fotos/pescado-icono.png" alt="Pescado">
                 <span>Pescado</span>
             </div>
