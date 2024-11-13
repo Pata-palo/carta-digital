@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Digital - Español</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('fondo.png'); /* Aggiungi l'immagine di sfondo in formato PNG */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+        }
+        .logo {
+            margin-top: 20px;
+        }
+        .logo img {
+            width: 150px; /* Regola la dimensione del logo */
+            height: auto;
+        }
+        .category {
+            margin-top: 20px;
+        }
+        .category h2 {
+            background-color: rgba(255, 0, 0, 0.7); /* Sfondo rosso con trasparenza */
+            color: #fff;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .category h2:hover {
+            background-color: rgba(255, 0, 0, 0.9); /* Sfondo rosso più scuro al passaggio del mouse */
+        }
+        .dish-list {
+            display: none;
+            margin-top: 10px;
+            background-color: rgba(50, 50, 50, 0.7); /* Sfondo grigio scuro con trasparenza */
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .dish {
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .dish h3 {
+            margin: 5px 0;
+            cursor: pointer;
+            color: #fff; /* Testo bianco */
+        }
+        .dish p {
+            color: #fff; /* Testo bianco */
+        }
+    </style>
+    <script>
+        function toggleCategory(categoryId) {
+            var category = document.getElementById(categoryId);
+            if (category.style.display === "none") {
+                category.style.display = "block";
+            } else {
+                category.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.jpg" alt="Logo del Ristorante">
+    </div>
+    <div class="category">
+        <h2 onclick="toggleCategory('aperitivos')">Antipasti</h2>
+        <div class="dish-list" id="aperitivos">
+            <div class="dish">
+                <h3 onclick="window.location.href='español/calamares.html'">Calamari alla Romana</h3>
+                <p>17,00€</p>
+            </div>
+            <div class="dish">
+                <h3 onclick="window.location.href='español/sepia.html'">Seppia alla Griglia</h3>
+                <p>14,50€</p>
+            </div>
+            <div class="dish">
+                <h3 onclick="window.location.href='español/gambas.html'">Gamberi all'Aglio</h3>
+                <p>16,50€</p>
+            </div>
+            <div class="dish">
+                <h3 onclick="window.location.href='español/sardinas.html'">Sardine alla Griglia</h3>
+                <p>13,50€</p>
+            </div>
+            <div class="dish">
+                <h3 onclick="window.location.href='español/gazpacho.html'">Gazpacho Andaluso</h3>
+                <p>9,00€</p>
+            </div>
+            <div class="dish">
+                <h3 onclick="window.location.href='español/fritura.html'">Frittura di Pesce Fresco (500 gr)</h3>
+                <p>24,00€</p>
+            </div>
+        </div>
+    </div>
+    <div class="category">
+        <h2 onclick="toggleCategory('ensaladas')">Insalate</h2>
+        <div class="dish-list" id="ensaladas">
+            <div class="dish">
+                <h3 onclick="window.location.href='español/ensalada-mixta-con-atun.html'">Insalata Mista con Tonno</h3>
+                <p>12,00€</p>
+            </div>
+            <div class="dish">
+                <h3 onclick="window.location.href='español/ensalada-cesar.html'">Insalata Caesar con Pollo</h3>
+                <p>13,00€</p>
+            </div>
+        </div>
+    </div>
+<div class="category">
+    <h2 onclick="toggleCategory('bocadillos')">Panini</h2>
+    <div class="dish-list" id="bocadillos">
+        <div class="dish">
+            <h3 onclick="window.location.href='español/tortilla-espanola.html'">Tortilla Spagnola</h3>
+            <p>7,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/jamon-queso.html'">Prosciutto + Formaggio</h3>
+            <p>7,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/catalana.html'">Catalana</h3>
+            <p>7,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/atun-tomate.html'">Tonno + Pomodoro</h3>
+            <p>7,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/lomo-fresco.html'">Lombo Fresco</h3>
+            <p>7,50€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/pepito-ternera.html'">Pepito di Manzo</h3>
+            <p>9,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/pechuga-pollo.html'">Petto di Pollo</h3>
+            <p>7,50€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/bacon-queso.html'">Bacon + Formaggio</h3>
+            <p>8,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/calamares-bocadillo.html'">Panino con Calamari</h3>
+            <p>8,50€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/hot-dog.html'">Hot Dog + Patatine</h3>
+            <p>Prezzo secondo la foto</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/philly-cheesesteak.html'">Philly Cheesesteak</h3>
+            <p>12,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/cubano.html'">Cubano</h3>
+            <p>12,00€</p>
+        </div>
+    </div>
+</div>
+<div class="category">
+    <h2 onclick="toggleCategory('sandwiches')">Sandwiches</h2>
+    <div class="dish-list" id="sandwiches">
+        <div class="dish">
+            <h3 onclick="window.location.href='español/jamon-queso-sandwich.html'">Prosciutto + Formaggio</h3>
+            <p>6,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/vegetal-atun-sandwich.html'">Vegetale + Tonno</h3>
+            <p>7,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/bacon-queso-sandwich.html'">Bacon + Formaggio</h3>
+            <p>7,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/atun-tomate-sandwich.html'">Tonno + Pomodoro</h3>
+            <p>6,50€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/club-sandwich.html'">Club Sandwich</h3>
+            <p>11,00€</p>
+        </div>
+    </div>
+</div>
+<div class="category">
+    <h2 onclick="toggleCategory('para-compartir')">Da Condividere</h2>
+    <div class="dish-list" id="para-compartir">
+        <div class="dish">
+            <h3 onclick="window.location.href='español/patatas-fritas.html'">Patatine Fritte</h3>
+            <p>5,50€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/patatas-bravas.html'">Patatas Bravas</h3>
+            <p>7,50€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/patatas-bacon-queso.html'">Patatine Fritte + Bacon + Formaggio</h3>
+            <p>9,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/boniato-frito.html'">Patatine Dolci</h3>
+            <p>7,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/nuggets-pollo.html'">Nuggets di Pollo + Patatine</h3>
+            <p>10,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/nachos.html'">Nachos*</h3>
+            <p>12,00€</p>
+        </div>
+        <p class="note">*Extra pulled pork: +3,00€</p>
+    </div>
+</div>
+<div class="category">
+    <h2 onclick="toggleCategory('hamburguesas')">Hamburger</h2>
+    <div class="dish-list" id="hamburguesas">
+        <div class="dish">
+            <h3 onclick="window.location.href='español/hamburguesa-vacuno.html'">Hamburger di Manzo + Patatine</h3>
+            <p>10,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/angus-burger.html'">Hamburger Angus + Patatine</h3>
+            <p>16,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/hamburguesa-pata-palo.html'">Hamburger Pata Palo</h3>
+            <p>16,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/hamburguesa-pollo.html'">Hamburger di Pollo + Patatine</h3>
+            <p>11,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/hamburguesa-vegetal.html'">Hamburger Vegetale + Patatine</h3>
+            <p>11,50€</p>
+        </div>
+    </div>
+</div>
+<div class="category">
+    <h2 onclick="toggleCategory('platos-combinados')">Piatti Combinati</h2>
+    <div class="dish-list" id="platos-combinados">
+        <div class="dish">
+            <h3 onclick="window.location.href='español/pechuga-pollo-combinado.html'">Petto di Pollo + Patatine + Insalata</h3>
+            <p>15,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/chuletas-cerdo.html'">Costolette di Maiale + Uovo + Patatine</h3>
+            <p>15,50€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/huevos-bacon-salchichas.html'>#51 (Uova + Bacon + Salsicce + Patatine)</h3>
+            <p>15,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/pollo-asado.html'">1/2 Pollo Arrosto + Patatine + Insalata</h3>
+            <p>15,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/lubina-plancha.html'">Spigola alla Griglia + Patatine + Insalata</h3>
+            <p>18,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/salmon-plancha.html'">Salmone Norvegese alla Griglia + Patatine e Insalata</h3>
+            <p>16,50€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/sardinas-patatas.html'">Sardine + Patatine + Insalata</h3>
+            <p>16,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/fish-chips.html'">Fish & Chips + Insalata</h3>
+            <p>15,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/espaguetis-bolonesa.html'">Spaghetti alla Bolognese</h3>
+            <p>12,00€</p>
+        </div>
+    </div>
+</div>
+<div class="category">
+    <h2 onclick="toggleCategory('postres')">Dolci</h2>
+    <div class="dish-list" id="postres">
+        <div class="dish">
+            <h3 onclick="window.location.href='español/tarta-zanahoria.html'">Torta di Carote</h3>
+            <p>5,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/tarta-crocanti.html'">Torta Croccante</h3>
+            <p>5,50€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/gofres.html'">Waffle</h3>
+            <p>4,50€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/creppes.html'">Crepes</h3>
+            <p>4,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/vaso-frutas.html'">Bicchiere di Frutta</h3>
+            <p>3,50€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='español/batidos.html'">Frullati</h3>
+            <p>4,00€</p>
+        </div>
+    </div>
+</div>
+<div class="category">
+    <h2 onclick="toggleCategory('bebida')">Bevande</h2>
+    <div class="dish-list" id="bebida">
+        <!-- Aggiungi le bevande qui -->
+    </div>
+</div>
+<!-- Aggiungi altre categorie qui -->
+</body>
+</html>

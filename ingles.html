@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Menu - English</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('fondo.png'); /* Add the background image in PNG format */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+        }
+        .logo {
+            margin-top: 20px;
+        }
+        .logo img {
+            width: 150px; /* Adjust the logo size */
+            height: auto;
+        }
+        .category {
+            margin-top: 20px;
+        }
+        .category h2 {
+            background-color: rgba(255, 0, 0, 0.7); /* Red background with transparency */
+            color: #fff;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .category h2:hover {
+            background-color: rgba(255, 0, 0, 0.9); /* Darker red background on hover */
+        }
+        .dish-list {
+            display: none;
+            margin-top: 10px;
+            background-color: rgba(50, 50, 50, 0.7); /* Dark gray background with transparency */
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .dish {
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .dish h3 {
+            margin: 5px 0;
+            cursor: pointer;
+            color: #fff; /* White text */
+        }
+        .dish p {
+            color: #fff; /* White text */
+        }
+    </style>
+    <script>
+        function toggleCategory(categoryId) {
+            var category = document.getElementById(categoryId);
+            if (category.style.display === "none") {
+                category.style.display = "block";
+            } else {
+                category.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.jpg" alt="Restaurant Logo">
+    </div>
+    <div class="category">
+        <h2 onclick="toggleCategory('appetizers')">Appetizers</h2>
+        <div class="dish-list" id="appetizers">
+            <div class="dish">
+                <h3 onclick="window.location.href='english/calamares.html'">Calamari a la Romana</h3>
+                <p>17,00€</p>
+            </div>
+            <div class="dish">
+                <h3 onclick="window.location.href='english/sepia.html'">Grilled Cuttlefish</h3>
+                <p>14,50€</p>
+            </div>
+            <div class="dish">
+                <h3 onclick="window.location.href='english/gambas.html'">Garlic Shrimp</h3>
+                <p>16,50€</p>
+            </div>
+            <div class="dish">
+                <h3 onclick="window.location.href='english/sardinas.html'">Grilled Sardines</h3>
+                <p>13,50€</p>
+            </div>
+            <div class="dish">
+                <h3 onclick="window.location.href='english/gazpacho.html'">Andalusian Gazpacho</h3>
+                <p>9,00€</p>
+            </div>
+            <div class="dish">
+                <h3 onclick="window.location.href='english/fritura.html'">Fresh Fish Fry (500 gr)</h3>
+                <p>24,00€</p>
+            </div>
+        </div>
+    </div>
+<div class="category">
+    <h2 onclick="toggleCategory('salads')">Salads</h2>
+    <div class="dish-list" id="salads">
+        <div class="dish">
+            <h3 onclick="window.location.href='english/mixed-salad-with-tuna.html'">Mixed Salad with Tuna</h3>
+            <p>12,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/caesar-salad.html'">Caesar Salad with Chicken</h3>
+            <p>13,00€</p>
+        </div>
+    </div>
+</div>
+<div class="category">
+    <h2 onclick="toggleCategory('sandwiches')">Sandwiches</h2>
+    <div class="dish-list" id="sandwiches">
+        <div class="dish">
+            <h3 onclick="window.location.href='english/spanish-omelette.html'">Spanish Omelette</h3>
+            <p>7,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/ham-cheese.html'">Ham + Cheese</h3>
+            <p>7,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/catalana.html'">Catalana</h3>
+            <p>7,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/tuna-tomato.html'">Tuna + Tomato</h3>
+            <p>7,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/fresh-pork-loin.html'">Fresh Pork Loin</h3>
+            <p>7,50€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/beef-pepito.html'">Beef Pepito</h3>
+            <p>9,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/chicken-breast.html'">Chicken Breast</h3>
+            <p>7,50€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/bacon-cheese.html'">Bacon + Cheese</h3>
+            <p>8,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/calamari-sandwich.html'">Calamari Sandwich</h3>
+            <p>8,50€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/hot-dog.html'">Hot Dog + Fries</h3>
+            <p>Price according to the photo</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/philly-cheesesteak.html'">Philly Cheesesteak</h3>
+            <p>12,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/cuban.html'">Cuban</h3>
+            <p>12,00€</p>
+        </div>
+    </div>
+</div>
+<div class="category">
+    <h2 onclick="toggleCategory('sandwiches')">Sandwiches</h2>
+    <div class="dish-list" id="sandwiches">
+        <div class="dish">
+            <h3 onclick="window.location.href='english/ham-cheese-sandwich.html'">Ham + Cheese</h3>
+            <p>6,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/vegetable-tuna-sandwich.html'">Vegetable + Tuna</h3>
+            <p>7,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/bacon-cheese-sandwich.html'">Bacon + Cheese</h3>
+            <p>7,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/tuna-tomato-sandwich.html'">Tuna + Tomato</h3>
+            <p>6,50€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/club-sandwich.html'">Club Sandwich</h3>
+            <p>11,00€</p>
+        </div>
+    </div>
+</div>
+<div class="category">
+    <h2 onclick="toggleCategory('to-share')">To Share</h2>
+    <div class="dish-list" id="to-share">
+        <div class="dish">
+            <h3 onclick="window.location.href='english/french-fries.html'">French Fries</h3>
+            <p>5,50€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/patatas-bravas.html'">Patatas Bravas</h3>
+            <p>7,50€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/french-fries-bacon-cheese.html'">French Fries + Bacon + Cheese</h3>
+            <p>9,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/sweet-potato-fries.html'">Sweet Potato Fries</h3>
+            <p>7,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/chicken-nuggets.html'">Chicken Nuggets + Fries</h3>
+            <p>10,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/nachos.html'">Nachos*</h3>
+            <p>12,00€</p>
+        </div>
+        <p class="note">*Extra pulled pork: +3,00€</p>
+    </div>
+</div>
+<div class="category">
+    <h2 onclick="toggleCategory('burgers')">Burgers</h2>
+    <div class="dish-list" id="burgers">
+        <div class="dish">
+            <h3 onclick="window.location.href='english/beef-burger.html'">Beef Burger + Fries</h3>
+            <p>10,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/angus-burger.html'">Angus Burger + Fries</h3>
+            <p>16,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/pata-palo-burger.html'">Pata Palo Burger</h3>
+            <p>16,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/chicken-burger.html'">Chicken Burger + Fries</h3>
+            <p>11,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/vegetable-burger.html'">Vegetable Burger + Fries</h3>
+            <p>11,50€</p>
+        </div>
+    </div>
+</div>
+<div class="category">
+    <h2 onclick="toggleCategory('combined-dishes')">Combined Dishes</h2>
+    <div class="dish-list" id="combined-dishes">
+        <div class="dish">
+            <h3 onclick="window.location.href='english/chicken-breast-combined.html'">Chicken Breast + Fries + Salad</h3>
+            <p>15,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/pork-chops.html'">Pork Chops + Egg + Fries</h3>
+            <p>15,50€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/eggs-bacon-sausages.html'>#51 (Eggs + Bacon + Sausages + Fries)</h3>
+            <p>15,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/roast-chicken.html'">1/2 Roast Chicken + Fries + Salad</h3>
+            <p>15,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/grilled-sea-bass.html'">Grilled Sea Bass + Fries + Salad</h3>
+            <p>18,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/grilled-salmon.html'">Norwegian Grilled Salmon + Fries + Salad</h3>
+            <p>16,50€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/sardines-fries.html'">Sardines + Fries + Salad</h3>
+            <p>16,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/fish-chips.html'">Fish & Chips + Salad</h3>
+            <p>15,00€</p>
+        </div>
+        <div class="dish">
+            <h3 onclick="window.location.href='english/spaghetti-bolognese.html'">Spaghetti Bolognese</h3>
+            <p>12,00€</p>
+        </div>
+    </div>
+</div>
+<div class="category">
+    <h2 onclick="toggleCategory('desserts')">Desserts</h2>
+    <div class="dish-list" id="desserts">
+        <!-- Add desserts here -->
+    </div>
+</div>
+<div class="category">
+    <h2 onclick="toggleCategory('drinks')">Drinks</h2>
+    <div class="dish-list" id="drinks">
+        <!-- Add drinks here -->
+    </div>
+</div>
+<!-- Add more categories here -->
+</body>
+</html>
